@@ -15,4 +15,5 @@ path = "src/main.rs"
 name = "rdmc"
 
 [dependencies]
+bpaf = { version = "0.9.9", features = ["autocomplete"] }
 markdown = "1.0.0-alpha.16"

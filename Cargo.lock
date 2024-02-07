@@ -3,6 +3,12 @@
 version = 3
 
 [[package]]
+name = "bpaf"
+version = "0.9.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "edc932b40b31d9bea0196f54c5b1b721b9aff3882fc08d9fe4082970c7e94d3d"
+
+[[package]]
 name = "markdown"
 version = "1.0.0-alpha.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -15,6 +21,7 @@ dependencies = [
 name = "rdmc"
 version = "0.1.0"
 dependencies = [
+ "bpaf",
  "markdown",
 ]
 
