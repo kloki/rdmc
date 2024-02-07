@@ -1,0 +1,17 @@
+name: Test
+
+env:
+  CARGO_TERM_COLOR: always
+
+on: pull_request
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: lint
+        run: cargo-fmt --check
+      - name: unit test
+        run: cargo test
