@@ -3,6 +3,7 @@ name = "rdmc"
 version = "0.1.0"
 edition = "2021"
 description = "Run commands from you readme as if its a Makefile"
+license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
