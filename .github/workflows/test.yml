@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: lint
-        run: cargo-fmt --check
+        run: cargo +nightly fmt --check
       - name: unit test
         run: cargo test
