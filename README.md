@@ -16,7 +16,7 @@ rdmc --bpaf-complete-style-bash >> ~/.bash_completion
 
 # Usage
 
-When you invoke `rdmc` it will look for a readme file in your current directory. It will extract commands from it.
+When you invoke `rdmc` it will look for a readme file at the root of your current repository. It will extract commands from it.
 
 ```bash
 rdmc <Tab>

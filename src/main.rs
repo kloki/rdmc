@@ -1,14 +1,15 @@
 use bpaf::*;
 use rdmc::{
-    inputfile::get_fallback,
+    inputfile::get_readme_file,
     parser::get_commands,
 };
 #[derive(Debug, Clone)]
 pub struct Args {
     command: String,
 }
+
 fn completer(input: &String) -> Vec<(String, Option<String>)> {
-    let input_file = get_fallback();
+    let input_file = get_readme_file();
     let commands = get_commands(input_file).expect("Failed to parse markdown");
     commands
         .values()
@@ -29,7 +30,7 @@ pub fn args() -> OptionParser<Args> {
     construct!(Args { command }).to_options()
 }
 fn main() -> Result<(), String> {
-    let input_file = get_fallback();
+    let input_file = get_readme_file();
     let commands = get_commands(input_file).expect("Failed to parse markdown");
     let parsed = args().run();
     match commands.get(&parsed.command) {

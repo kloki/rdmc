@@ -1,6 +1,6 @@
 [package]
 name = "rdmc"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Run commands from you readme as if its a Makefile"
 license = "MIT OR Apache-2.0"
