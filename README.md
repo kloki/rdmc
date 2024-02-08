@@ -1,6 +1,6 @@
 # RDMC - Readme command
 
-Run commands from you readme as if its a Makefile
+Run commands from you readme as if its a Makefile.
 
 ## Installation
 
@@ -32,6 +32,8 @@ rdmc Command
 rdmc <Command> | sh
 ```
 
-# readme format
+# Readme format
 
-`rdmc` will extract command from all code blocks tagged with the `bash` language. The name of the command is based on its closest heading. Reference this README file as a properly formatted example.
+`rdmc` will extract commands from all code blocks tagged with the `bash` language. The name of the command is based on its closest heading.
+
+Reference this README file as a properly formatted example.

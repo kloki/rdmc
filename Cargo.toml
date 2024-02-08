@@ -4,6 +4,7 @@ version = "0.1.1"
 edition = "2021"
 description = "Run commands from you readme as if its a Makefile"
 license = "MIT OR Apache-2.0"
+repository = "https://github.com/kloki/rdmc"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -16,5 +17,5 @@ path = "src/main.rs"
 name = "rdmc"
 
 [dependencies]
-bpaf = { version = "0.9.9", features = ["autocomplete"] }
+bpaf = { version = "0.9.9", features = ["autocomplete", "bright-color"] }
 markdown = "1.0.0-alpha.16"
